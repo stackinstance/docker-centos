@@ -1,6 +1,6 @@
 # docker-centos
 
-When your developing (for example) in Symfony2 and want to use Docker for development, you can use this package to include Docker into your (Symfony2) project. This package will include a Docker instance with Centos 7 installed with php + apache2 and APC.
+When your developing (for example) in Symfony2 and want to use Docker for development, you can use this package to include Docker into your (Symfony2) project. This package will include a Docker instance with Centos 7 installed with php 5.6 + apache2 and APC.
 Just follow the installation steps and your done. 
 
 ## Installation steps:
