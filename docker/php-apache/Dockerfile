@@ -2,8 +2,8 @@ FROM centos:7
 
 MAINTAINER StackInstance <info@stackinstance.com>
 
-rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
 RUN yum -y install httpd mysql-devel mysql-libs mod_ssl
 RUN yum -y install php56w php56w-cli php56w-ldap php56w-mbstring php56w-mcrypt php56w-mysql php56w-pear-MDB2-Driver-mysqli php56w-pecl-memcached php56w-xml php56w-gd php56w-pear php56w-devel
