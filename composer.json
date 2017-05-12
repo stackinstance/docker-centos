@@ -13,14 +13,14 @@
         "MIT"
     ],
     "require" : {
-        "php": ">=5.5.0"
+        "php": ">=5.6.0"
     },
     "repositories" : [{
         "type" : "vcs",
         "url" : "https://github.com/stackinstance/docker-centos"
     }],
     "target-dir": "/",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config" : {
