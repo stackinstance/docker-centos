@@ -6,7 +6,7 @@ RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 RUN yum -y install httpd mysql-devel mysql-libs mod_ssl
 RUN yum -y install php56w-pecl-apcu php56w-opcache php56w php56w-cli php56w-ldap php56w-mbstring php56w-mcrypt php56w-mysql php56w-pear-MDB2-Driver-mysqli php56w-pecl-memcached php56w-xml php56w-gd php56w-pear php56w-devel
-RUN yum -y install httpd-devel pcre-devel gcc make
+RUN yum -y install httpd-devel pcre-devel gcc make curl
 
 RUN pecl install apc
 RUN echo "extension=apc.so" >> /etc/php.d/apc.ini
@@ -50,6 +50,15 @@ RUN sed -i \
     /etc/php.ini
 
 ADD website.conf /etc/httpd/conf.d/
+
+# Add nodejs
+RUN curl -sL https://rpm.nodesource.com/setup_5.x | bash -
+RUN yum install -y nodejs
+RUN npm install npm grunt
+
+# Add bundler
+RUN yum -y update && yum -y install -y ruby ruby-dev make
+RUN gem install bundler
 
 EXPOSE 80 443
 
