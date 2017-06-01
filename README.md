@@ -21,6 +21,10 @@ vendor/stackinstance/docker-centos/docker/tools/rebuild.sh
 
 Your (local) project **root** will be mapped to the **/var/www** directory on the Docker instance. The **web root** folder is mapped to the (local) **web** directory in your project.
 
+
+## PHP 5.6 or PHP 7
+When using php 5.6 use version 1.1.2 and when using php 7.1 use the latest version.
+
 ## Website
 - http://bundles.stackinstance.com
 - http://www.stackinstance.com
