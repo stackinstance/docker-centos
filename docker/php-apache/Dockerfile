@@ -23,6 +23,7 @@ RUN sed -i \
     -e 's~^#ExtendedStatus On$~ExtendedStatus On~g' \
     -e 's~^DirectoryIndex \(.*\)$~DirectoryIndex \1 index.php~g' \
     -e 's~^NameVirtualHost \(.*\)$~#NameVirtualHost \1~g' \
+    -e 's~^AllowOverride None \(.*\)$~AllowOverride All \1~g' \
     /etc/httpd/conf/httpd.conf
 
 #
