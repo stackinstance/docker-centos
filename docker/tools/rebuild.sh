@@ -1,4 +1,6 @@
 #!/bin/bash
+php ../../composer.phar update stackinstance/docker-centos
+bash ../../vendor/stackinstance/docker-centos/install.sh
 
 docker-compose --project-name project down
 docker rmi project_php-apache
