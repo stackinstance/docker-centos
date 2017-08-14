@@ -14,16 +14,12 @@ Step 2: run command:
 vendor/stackinstance/docker-centos/install.sh
 ```
 
-Step 3: Open docker terminal and run command: 
+Step 3: Open docker terminal and the following command in your project root: 
 ```
-vendor/stackinstance/docker-centos/docker/tools/rebuild.sh
+bash docker/tools/rebuild.sh
 ```
 
 Your (local) project **root** will be mapped to the **/var/www** directory on the Docker instance. The **web root** folder is mapped to the (local) **web** directory in your project.
-
-
-## PHP 5.6 or PHP 7
-When using php 5.6 use version 1.1.2 and when using php 7.1 use the latest version.
 
 ## Website
 - http://bundles.stackinstance.com
