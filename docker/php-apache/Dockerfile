@@ -49,8 +49,8 @@ RUN sed -i \
     /etc/php.ini
 
 ADD website.conf /etc/httpd/conf.d/
-ADD extra.sh /root/
-RUN /bin/bash -c "/root/extra.sh"
+ADD extra.sh /usr/local/bin/
+RUN /bin/bash -c "/usr/local/bin/extra.sh"
 
 EXPOSE 80 443
 
