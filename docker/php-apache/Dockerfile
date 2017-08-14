@@ -50,7 +50,7 @@ RUN sed -i \
 
 ADD website.conf /etc/httpd/conf.d/
 ADD extra.sh /root/
-CMD /root/extra.sh
+RUN /bin/bash -c "/root/extra.sh"
 
 EXPOSE 80 443
 
