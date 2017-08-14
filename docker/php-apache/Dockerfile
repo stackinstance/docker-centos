@@ -19,6 +19,7 @@ RUN yum -y install yum clean all
 #
 RUN sed -i \
     -e 's~^ServerSignature On$~ServerSignature Off~g' \
+    -e 's~^EnableSendfile On$~EnableSendfile Off~g' \
     -e 's~^ServerTokens OS$~ServerTokens Prod~g' \
     -e 's~^#ExtendedStatus On$~ExtendedStatus On~g' \
     -e 's~^DirectoryIndex \(.*\)$~DirectoryIndex \1 index.php~g' \
@@ -53,7 +54,7 @@ RUN sed -i \
 ADD website.conf /etc/httpd/conf.d/
 
 # Add nodejs
-RUN curl -sL https://rpm.nodesource.com/setup_5.x | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_6.x | bash -
 RUN yum install -y nodejs
 RUN npm install npm grunt
 
