@@ -1,6 +1,6 @@
 #!/bin/bash
-php ../../composer.phar update stackinstance/docker-centos
-bash ../../vendor/stackinstance/docker-centos/install.sh
+php composer.phar update stackinstance/docker-centos
+bash vendor/stackinstance/docker-centos/install.sh
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$DIR/bootstrap.sh"
