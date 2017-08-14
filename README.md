@@ -14,7 +14,12 @@ Step 2: run the following command in your project root:
 vendor/stackinstance/docker-centos/install.sh
 ```
 
-Step 3: Open docker terminal and the following command in your project root: 
+Step 3: Add additional bash code to run when the docker image is build:
+```
+Open /extra.sh and add bash code
+```
+
+Step 4: Open docker terminal and the following command in your project root: 
 ```
 bash docker/tools/rebuild.sh
 ```
