@@ -8,9 +8,6 @@ RUN yum -y install httpd mysql-devel mysql-libs mod_ssl
 RUN yum -y install php56w-pecl-apcu php56w-opcache php56w php56w-cli php56w-ldap php56w-mbstring php56w-mcrypt php56w-mysql php56w-pear-MDB2-Driver-mysqli php56w-pecl-memcached php56w-xml php56w-gd php56w-pear php56w-devel
 RUN yum -y install httpd-devel pcre-devel gcc make curl
 
-RUN pecl install apc
-RUN echo "extension=apc.so" >> /etc/php.d/apc.ini
-
 RUN yum -y update bash
 RUN yum -y install yum clean all
 
