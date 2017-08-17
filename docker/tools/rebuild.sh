@@ -1,5 +1,4 @@
 #!/bin/bash
-php composer.phar update stackinstance/docker-centos
 bash vendor/stackinstance/docker-centos/install.sh
 cp extra.sh vendor/stackinstance/docker-centos/docker/php-apache/.
 
