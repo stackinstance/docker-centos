@@ -32,8 +32,5 @@ bash docker/tools/rebuild.sh
 Your (local) project **root** will be mapped to the **/var/www** directory on the Docker instance. The **web root** folder is mapped to the (local) **web** directory in your project.
 
 ## Website
-- http://bundles.stackinstance.com
 - http://www.stackinstance.com
-- https://codedump.io
-- http://www.codetrust.nl
-
+- http://www.raymondkootstra.nl
