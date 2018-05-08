@@ -14,4 +14,4 @@ docker-compose --project-name $PROJECTNAME down
 docker rmi $DOCKERIMAGE
 docker-compose --project-name $PROJECTNAME build --no-cache
 docker-compose --project-name $PROJECTNAME up -d
-docker exec -t -i -u apache $DOCKERIMAGE"_1" /bin/bash -c 'cd /var/www ; exec bash'
+#docker exec -t -i -u apache $DOCKERIMAGE"_1" /bin/bash -c 'cd /var/www ; exec bash'
