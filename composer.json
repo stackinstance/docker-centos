@@ -4,7 +4,7 @@
     "type" : "symfony-bundle",
     "authors" : [{
         "name" : "Ray Kootstra",
-        "email" : "r.kootstra@stackinstance.com"
+        "email" : "info@raymondkootstra.nl"
     }],
     "keywords" : [
         "docker centos"
@@ -13,14 +13,14 @@
         "MIT"
     ],
     "require" : {
-        "php": ">=5.6.0"
+        "php": ">=7.2.0"
     },
     "repositories" : [{
         "type" : "vcs",
         "url" : "https://github.com/stackinstance/docker-centos"
     }],
     "target-dir": "/",
-    "version": "3.3.0",
+    "version": "4.0.0",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config" : {
