@@ -1,6 +1,6 @@
 # docker-centos
 
-When your developing (for example) in Symfony2 and want to use Docker for development, you can use this package to include Docker into your (Symfony2) project. This package will include a Docker instance with Centos 7 installed with php 7.2 + apache2 and APC.
+When your developing (for example) in Symfony2 and want to use Docker for development, you can use this package to include Docker into your (Symfony2) project. This package will include a Docker instance with Centos 7 installed with php 7.2 + apache2 and the latest MariaDB.
 Just follow the installation steps and your done. 
 
 ## Installation steps:
@@ -32,7 +32,7 @@ bash docker/tools/rebuild.sh
 Your (local) project **root** will be mapped to the **/var/www** directory on the Docker instance. The **web root** folder is mapped to the (local) **web** directory in your project.
 
 ## PHP 5.6
-If you want to use php 5.6 instead of php 7.2, you need to use version 3.2.0:
+If you want to use php 5.6 instead of php 7.2, you need to use version 3.2.0. This version also used MySQL instead of MariaDB:
 ```
 composer require stackinstance/docker-centos:3.2.0 
 ```
