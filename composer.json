@@ -20,7 +20,7 @@
         "url" : "https://github.com/stackinstance/docker-centos"
     }],
     "target-dir": "/",
-    "version": "4.0.1",
+    "version": "4.1.0",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config" : {
