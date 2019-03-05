@@ -5,8 +5,7 @@ MAINTAINER StackInstance <info@stackinstance.com>
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 RUN yum -y install httpd mysql-devel mysql-libs mod_ssl
-#RUN yum -y install php56w-pecl-apcu php56w-opcache php56w php56w-cli php56w-ldap php56w-mbstring php56w-mcrypt php56w-mysql php56w-pear-MDB2-Driver-mysqli php56w-pecl-memcached php56w-xml php56w-gd php56w-pear php56w-devel
-RUN yum -y install php72w php72w-cli php72w-ldap php72w-mbstring php72w-mysql php72w-pear-MDB2-Driver-mysqli php72w-pecl-memcached php72w-xml php72w-gd php72w-pear php72w-devel php72w-pecl-imagick php72w-pecl-imagick-devel
+RUN yum -y install php72w php72w-cli php72w-ldap php72w-mbstring php72w-mysql php72w-pear-MDB2-Driver-mysqli php72w-pecl-memcached php72w-xml php72w-gd php72w-pear php72w-devel php72w-pecl-imagick php72w-pecl-imagick-devel php72w-bcmath
 RUN yum -y install httpd-devel pcre-devel gcc make curl
 
 RUN yum -y update bash
