@@ -53,6 +53,6 @@ ADD extra.sh /tmp/
 RUN ["chmod", "+x", "/tmp/extra.sh"]
 RUN /tmp/extra.sh
 
-EXPOSE 80 443
+EXPOSE 80 443 8080
 
 CMD /usr/sbin/httpd -c "ErrorLog /dev/stdout" -DFOREGROUND
