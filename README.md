@@ -38,5 +38,4 @@ composer require stackinstance/docker-centos:3.2.0
 ```
 
 ## Website
-- http://www.stackinstance.com
-- http://www.raymondkootstra.nl
+- https://raymondkootstra.nl
